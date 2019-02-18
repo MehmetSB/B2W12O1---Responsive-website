@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  font-family: 'Archivo', sans-serif;
+  width: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+}
+
+.dropbtn{
+	background-color: transparent;
+ 	color: silver;
+	padding: 1em;
+  border-style: solid;
+  border-width: 0.1px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown{
+  background-color: #e4cd1b;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+.show {
+  display:block;
+}
+
+.logo{
+  background-color: white;
+  height: 80px;
+}
+
+.imglogo{
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+.imgheader{
+    width: 100%;
+}
+
+h1{
+  margin-left: 10px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Archivo', sans-serif;
+}
+
+div.text{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80%;
+}
+
+hr{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+button.knop{
+  font-size: 25px;
+  background-color: #e4cd1b;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+iframe{
+  margin-top: 50px;
+  margin-left: 10px;
+  align: right;
+}
+
+.info{
+  display: none;
+}
+
+@media only screen and (min-width: 720px){
+  body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  button{
+    display: none;
+  }
+  .dropdown{
+    height: 50px;
+  }
+  .info{
+    width: 100%;
+    display: block;
+    margin-left: 600px;
+  }
+  .info p{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 50px;
+  }
+  .imglogo{
+    float: left;
+    width: 400px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+  }
+
+  .dropdown{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .dropdown-content{
+    width: 100%;
+    display: inline;
+    margin-top: 50px;
+    background-color: transparent;
+  }
+
+  .dropdown-content a{
+    display: inline;
+  }
+
+  div.proefles{
+    margin-left: 5%;
+    width: 30%;
+    display: inline-block;
+  }
+
+  div.locaties{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  div.rijlessen{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  iframe{
+    margin-left: 20%;
+    width: 1000px;
+    height: 500px;
+  }
+
+}
