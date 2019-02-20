@@ -10,27 +10,33 @@
     <title>Verkeerschool De Flexi</title>
   </head>
   <body>
-     <div class="dropdown">
-       <div class="info">
-         <p><i class="fas fa-phone"></i> (06) --- --- --</p>
-         <p><i class="fab fa-whatsapp"></i> (06) --- --- --</p>
-         <p><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</p>
-         <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
-         <i class="fab fa-facebook"></i>
-         <i class="fab fa-instagram"></i>
-         <i class="fab fa-twitter"></i>
+      <div class="menu1">
+         <div class="dropdown">
+           <button class="dropbtn"><i class="fas fa-bars fa-2x"></i></button>
+           <div class="dropdown-content">
+             <div class="info">
+             <p><i class="fas fa-phone"></i> (06) --- --- --</p>
+             <p><i class="fab fa-whatsapp"></i> (06) --- --- --</p>
+             <p><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</p>
+             <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+             <i class="fab fa-facebook"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-twitter"></i>
+           </div>
+         </div>
        </div>
-       <button class="dropbtn"><i class="fas fa-bars fa-2x"></i></button>
-     </div>
-     <div class="logo">
-       <img src="images/logo.png" alt="logo" class="imglogo">
-       <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars fa-2x"></i></button>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="#">AUTORIJBEWIJS <i class="fas fa-caret-down"></i></a>
-         <a href="#">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i></a>
-         <a href="#">THEORIELES</a>
-         <a href="#">OPFRIS CURSUS</a>
-         <a href="#">CONTACT</a>
+    </div>
+    <img src="images/logo.png" alt="logo" class="imglogo">
+    <div class="menu2">
+       <div class="dropdown">
+         <button class="dropbtn-2"><i class="fas fa-bars fa-2x"></i></button>
+         <div class="dropdown-content-2">
+             <a href="#">AUTORIJBEWIJS <i class="fas fa-caret-down"></i></a>
+             <a href="#">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i></a>
+             <a href="#">THEORIELES</a>
+             <a href="#">OPFRIS CURSUS</a>
+             <a href="#">CONTACT</a>
+         </div>
        </div>
      </div>
      <header>
@@ -55,7 +61,7 @@
          <p>Onze rijinstructeurs zijn verspreid over wel bijna heel Nederland. Er is dus bijna altijd wel een
            rijinstructeur bij jou in de buurt. Is er bij jou in de buurt nog geen FLEXi rijschool.
            Bel dan even met ons. Wij kijken dan samen of we toch een FLEXi rijistructeur voor jou kunnen regelen.
-           Klik hier de locaties.
+           Klik <a href="#" class="link">hier</a> de locaties.
          </p>
        </div>
      </div>
@@ -70,6 +76,9 @@
          </p>
        </div>
      </div>
-     <iframe width="400" height="315" src="https://www.youtube.com/embed/-LIhqaqeXUU"></iframe>
+     <div class="video">
+     <iframe src="https://www.youtube.com/embed/-LIhqaqeXUU"></iframe>
+   </div>
+   <footer> <p>© Mehmet Ş, 2018<p></footer>
    </body>
 </html>

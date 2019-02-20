@@ -6,39 +6,46 @@
 body{
   font-family: 'Archivo', sans-serif;
   width: 100%;
-   margin: 0px;
-   padding: 0px;
-   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .dropbtn{
-	background-color: transparent;
- 	color: silver;
-	padding: 1em;
-  border-style: solid;
-  border-width: 0.1px;
-  cursor: pointer;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: transparent;
-}
-
-.dropdown{
   background-color: #e4cd1b;
-  width: 100%;
-  height: 70px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  clear:both;
+}
+
+.dropbtn-2 {
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  clear:both;
+
+}
+
+.menu1{
+  background-color: #e4cd1b;
+}
+
+.dropdown {
   position: relative;
   display: inline-block;
+
 }
 
-.dropdown-content{
+.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -50,7 +57,56 @@ body{
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #e4cd1b;
+}
+
+.dropdown-content-2 {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content-2 a {
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  margin-top: 3%;
+}
+
+.dropdown:hover .dropdown-content-2 {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e4cd1b;
+}
+
+.menu2{
+  background-color: transparent;
+}
+
+iframe{
+  width: 96%;
+  margin-left: 150px;
+  display: block;
+  height: 315px;
+}
+
+.video{
+  margin-left: 2%;
+}
+
+a.link, a.link:hover, a.link:visited{
+  text-decoration: none;
+  color: blue;
 }
 
 .show {
@@ -60,6 +116,7 @@ body{
 .logo{
   background-color: white;
   height: 80px;
+  display: inline-block;
 }
 
 .imglogo{
@@ -67,7 +124,7 @@ body{
   width: 200px;
   height: auto;
   margin-top: 15px;
-  margin-right: 50px;
+    display: inline-block;
 }
 
 .imgheader{
@@ -84,7 +141,7 @@ h1{
 
 div.text{
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 45px;
   width: 80%;
 }
 
@@ -94,12 +151,13 @@ hr{
 }
 
 button.knop{
-  font-size: 25px;
+  width: 350px;
+  font-size: 22px;
   background-color: #e4cd1b;
   border: none;
   cursor: pointer;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 45px;
   padding: 10px 40px;
   text-align: center;
   text-decoration: none;
@@ -107,33 +165,30 @@ button.knop{
 }
 
 iframe{
-  margin-top: 50px;
-  margin-left: 10px;
-  align: right;
+  margin-top: 5%;
+  margin-left: 1%;
 }
 
-.info{
-  display: none;
+footer{
+  background-color: #e4cd1b;
+  text-align: center;
 }
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 1080px){
   body{
     width: 100%;
-    margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
   }
 
   button{
     display: none;
   }
-  .dropdown{
-    height: 50px;
-  }
+
   .info{
     width: 100%;
     display: block;
-    margin-left: 600px;
+    background-color: #e4cd1b;
+
   }
   .info p{
     margin-top: 10px;
@@ -141,51 +196,98 @@ iframe{
     font-size: 1.2em;
     margin-right: 50px;
   }
+
+  .info
+  {
+    left: calc(15% + 150px);
+    position: fixed;
+  }
+
   .imglogo{
     float: left;
     width: 400px;
-    margin-left: 150px;
     margin-bottom: 15px;
   }
 
   .dropdown{
     display: inline-block;
-    width: 100%;
+    width: 150%;
+    height: 50px;
   }
+
 
   .dropdown-content{
     width: 100%;
+    height: 4%;
     display: inline;
-    margin-top: 50px;
-    background-color: transparent;
+    position: fixed;
+    background-color: #e4cd1b;
+    z-index: 1;
   }
 
   .dropdown-content a{
     display: inline;
+    position: static;
   }
 
-  div.proefles{
-    margin-left: 5%;
-    width: 30%;
-    display: inline-block;
-  }
+    .dropdown-content-2{
+      width: 100%;
+      margin-left: 2%;
+      display: inline-block;
+      background-color: white;
+      z-index: 0;
+    }
 
-  div.locaties{
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-  }
+    .dropdown-content-2 a{
+      display: inline-block;
 
-  div.rijlessen{
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-  }
+    }
 
-  iframe{
-    margin-left: 20%;
-    width: 1000px;
-    height: 500px;
-  }
+    .dropdown-2{
+      display: inline-block;
+      width: 80%;
+      height: 150px;
+    }
 
-}
+    div.proefles{
+      width: 25%;
+      margin-left: 12%;
+      display: inline-block;
+    }
+
+    div.locaties{
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    div.rijlessen{
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    iframe{
+      margin-left: 12%;
+      width: 1350px;
+      height: 500px;
+    }
+
+    button.knop{
+      width: 380px;
+    }
+
+    .menu1{
+      background-color: white;
+    }
+
+    .menu2{
+      height: 100px;
+      width: 60%;
+      display: inline-block;
+    }
+    footer{
+      background-color: #e4cd1b;
+      text-align: center;
+    }
+  }
